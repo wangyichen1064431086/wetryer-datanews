@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <title>Datanews Studio</title>
+    <link rel="shortcut icon" href="../../common/wetryer.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="datanews.css">
+    <script src="../../common/jquery-2.1.4.js"></script>
+    <!--defer只对外部脚本起作用，将脚本的加载和执行推迟到HTML文档所有元素都解析后-->
+                                               <!--async可异步执行脚步，即边解析html文档，边加载和执行脚本-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-88244820-1', 'auto');
+      ga('send', 'pageview');
+
+  </script>
+
+  </head>
+
+  <body>
+    <script src="datanews.js"></script>
+    <nav>
+      <ul class="navrow">
+        <li class="logofont">DataNews Studio</li>
+        <li class="navoption"><a href="#">首页</a></li>
+        <li class="navoption" id="goodArticle"><a target="_blank" href="../articles/index/articles.html">精品文章</a></li>
+
+        <li class="navoption" id="hasSub"><a>关于我们</a></li>
+       
+        <li class="navoption"><a target="_blank" href="../myStudio/index/index.html">我的工作室</a></li>
+        
+        <li class="regi" id="regi"><a id="beforeRegi">登录/注册</a></li>
+
+      </ul>
+      <ul class="dropdown">
+         <li><a target="_blank" href="#knowus">认识我们</a></li>
+         <li><a target="_blank" href="#joinus">加入我们</a></li>
+      </ul>
+
+      
+    </nav>
+    
+    <div id="myCarousel">
+      <div id="myCarContent">
+        
+      </div>
+      <div id="myCarButtons">
+        <button id="myCarBu0" class="aniBu"></button> <!--class="aniBu0"-->
+        <button id="myCarBu1" class="aniBu"></button>
+        <button id="myCarBu2" class="aniBu"></button>
+      </div>
+    </div>
+    
+    
+    <p id="showCount"><!-- 方便查看计时情况 ,平时可设置css的display为none-->
+      0
+    </p>
+    
+    <div id="iWill">
+      <button class="iWillBu">我要投稿</button>
+    </div>
+    
+    <div id="articleSection">
+      <div id="section0">
+        <div class="sectionLogo">
+          <img src="pic/news.png" alt="logoNews"/>
+          <div class="back0"></div>
+        </div>
+        <p class="sectionTitle">
+          数据新闻资讯
+        </p>
+        <div class="sectionList">
+          <p><a target="_blank" href="../articles/newsOverview/1/DJA2016.html">2016GEN数据新闻奖投稿已经截止</a></p>
+          <p><a target="_blank" href="../articles/newsOverview/2/DJA2015.html">2015GEN数据新闻奖获奖名单揭晓</a></p>
+        </div>
+        <div class="sectionReadMore">
+          <a target="_blank" href="../articles/index/articles.html">阅读更多>></a>
+        </div>
+      </div>
+      <div id="section1">
+        <div class="sectionLogo">
+          <img src="pic/notebookAndPen.png" alt="logoNews"/>
+          <div class="back1"></div>
+        </div>
+        <p class="sectionTitle">
+          经典作品赏析
+        </p>
+        <div class="sectionList">
+          <p><a target="_blank" href="../articles/workAppreciation/1/Donoharm.html">拉斯维加斯太阳报：拒绝伤害</a></p>
+          <p><a target="_blank" href="../articles/workAppreciation/2/Iraqi War Logs.html">thispic伊拉克战争日志</a></p>
+          <p><a target="_blank" href="../articles/workAppreciation/3/messagemachine.html">Message Machine</a></p>
+        </div>
+        <div class="sectionReadMore">
+          <a target="_blank" href="../articles/index/articles.html">阅读更多>></a>
+        </div>
+      </div>
+      <div id="section2">
+        <div class="sectionLogo">
+           <img src="pic/treasureBox.png" alt="logoNews"/>
+           <div class="back2"></div>
+        </div>
+        <p class="sectionTitle">
+          实用技能寻宝
+        </p>
+        <div class="sectionList">
+          <p><a target="_blank" href="../articles/treasureHunt/1/Introduce of treasure hunt.html">数据新闻寻宝开篇</a></p>
+          <p><a target="_blank" href="../articles/treasureHunt/2/IntroduceofGephi.html">玩转Gephi1</a></p>
+          <p><a target="_blank" href="../articles/treasureHunt/2/IntroduceofGephi.html">玩转Gephi2</a></p>
+        </div>
+        <div class="sectionReadMore">
+          <a target="_blank" href="../articles/index/articles.html">阅读更多>></a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="beizhu">
+       <p>闽ICP备15020892</p>
+    </div>
+    
+    
+    <div id="changeDiv">
+      <iframe  id="register" name="regiWindow" src="../register/regiwindow.html" scrolling="no">
+        
+      </iframe>
+    </div>
+        
+    <script src="datanews.js"></script>
+    <!--<script defer src="datanews1.js"></script>-->
+  </body>
+</html>
+

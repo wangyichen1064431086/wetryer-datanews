@@ -1,0 +1,278 @@
+ body{
+     /* height: 100%;/*很重要，如不定义，后面的div的height的百分比将无效*/
+      margin: 0px;/*浏览器默认margin:8px*/
+      padding: 0px;
+      position: absolute;
+      width: 1366px;
+      
+  }
+  
+ /**********************************导航栏 纯手写（也可用bootstrap框架的nav）***************************************/
+  .navrow{
+      position: absolute;
+      top: 0px;
+      height: 50px;
+      width: 100%;/*设备上浏览器最大宽度,继承于body*/
+      background-color: #9CCD64;
+      margin: 0px;
+      padding: 0px;
+      
+      border:thin solid red;
+    }
+   nav>ul>li{/*****此处不能使用.navrow>li  为什么？？？****/
+        display: inline-block;/*li默认的display为block,设置为inline后，可将li排列在一行；但设为inline后，无法使用width属性，就设为inline-block*/
+        width: 100px;
+        height: 100%;
+        text-align: center;/*块内左右居中*/
+        margin: 0px;
+        padding: 0px;
+        background-color: #9CCD64;
+        position: relative;/*为什么一定要向上相对生成位置平移1px才能和父元素对其呢？*/
+        top: -1px;
+        
+        border:thin solid red;
+       
+    } 
+  .logofont{
+        display: inline-block;
+        width:300px;
+        height: 50px;
+        text-align: center;/*块内左右居中*/
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 150px;
+        margin-right: 20px;
+        padding: 0px;
+        position: relative;/*为什么一定要向上相对生成位置平移1px才能和父元素对其呢？*/
+        top: -1px;
+        
+     
+        font: 32px  "Monotype Corsiva", sans-serif;
+        line-height: 50px;/*记住一定得写在font-size之后才有用*/
+        color: white;
+         cursor: default;/*改光标形状为默认形状：一个箭头*/
+        border:thin solid red;
+   }
+   .regi{
+        text-align: center;/*块内左右居中*/
+        margin-left: 120px;
+        margin-right: 20px;
+        padding: 0px;
+        display: inline-block;
+        width:100px;
+        height: 50px;
+        line-height: 50px;
+        /*color: white;
+        font: 14px "微软雅黑",sans-serif;*/
+
+        border:thin solid red;
+    }
+ 
+   .navrow a{
+        text-decoration: none;
+        font: 16px "微软雅黑",sans-serif;
+        color: white;
+        line-height: 50px;
+    }
+   .regi a{
+        text-decoration: none;
+        font: 14px "微软雅黑",sans-serif;
+        color: white;
+        line-height: 50px;
+    }
+  .dropdown{
+        display: none;
+        width: 150px;
+        height: 80px;
+        background-color: #9CCD64;
+        opacity: 0.7;
+    
+        position: absolute;
+        left: 690px;
+        top: 50px;
+        margin: 0px;
+        padding: 0px;
+        z-index: 10;
+        
+        border:thin solid red;
+  }
+  .dropdown>li{
+        width: 150px;
+        height: 30px;
+        text-align: left;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+ .dropdown a{
+        text-decoration: none;
+        font: 14px "微软雅黑",sans-serif;
+        color: white;
+        line-height: 30px;
+        margin-left: 25px;
+        
+    }
+li a,.navoption{
+        cursor: pointer;/*控制鼠标形状为手型*/
+    }
+
+    
+/*********************************************版块标题*****************************************/
+ #sectionTitle{
+        position: absolute;
+        margin:0;
+        top:60px;
+        left:12.5%;
+        
+        width:75%;
+        height: 80px;
+        
+        border: thin solid red;
+    }
+
+#sectionTitle p{
+        position:absolute;
+        margin:0;/*一定要设置，否则它会自动生成一定的margin,导致top变大。。。待研究*/
+        top:40px;
+        left:0px;
+        
+        height:30px;
+        width:300px;
+        
+        font: 500 22px  微软雅黑,serif;/*字体设置的顺序不能错*/
+        color:gray;
+        
+        text-align:left;/*默认就是left*/
+        
+        border:thin solid red;
+    }
+  hr{
+        position:absolute;
+        margin:0px;
+        top:70px;
+        left:0px;
+        
+        width:100%;
+        opacity:0.5;
+        height: 0.1px;
+       
+        /*border:thin solid red;*/
+        
+    }
+
+/**************************************文章类型列表******************************************/
+#articleCate{
+    position:absolute;
+    margin:0;
+    top:150px;
+    left:13%;
+    
+    width:200px;
+    height:150px;
+    
+    border:thin solid red;
+    
+}
+.articleMenu{
+    position:absolute;
+    margin:0px;
+    padding: 0px;/*margin padding一定要设清楚*/
+    width: 100%;
+    height: 100%;
+    border:thin solid blue;
+}
+.articleOption0{
+      position: absolute;
+      margin: 0px;
+      padding: 0px;
+      
+      top: 0px;
+      left: 0px;
+      width: 185px;
+      height: 40px;
+      list-style-type: none;/*去掉li前面的点*/
+      background-color: #9CCD64;
+}
+.articleOption1{
+      position: absolute;
+      margin: 0px;
+      padding: 0px;
+      
+      top: 50px;
+      left: 0px;
+      width: 185px;
+      height: 40px;
+      list-style-type: none;/*去掉li前面的点*/
+      background-color: lightgray;
+
+}
+.articleOption2{
+      position: absolute;
+      margin: 0px;
+      padding: 0px;
+      
+      top: 100px;
+      left: 0px;
+      width: 185px;
+      height: 40px;
+      list-style-type: none;/*去掉li前面的点*/
+      background-color: lightgray;
+}
+.articleMenu a{
+      position: absolute;
+      margin: 0px;
+      padding: 10px 0px;
+      padding-left: 15px;
+      
+      height: 20px;/*其实已经超出了父元素*/
+      width: 100%;
+      line-height: 40px;
+      
+      font: 16px 微软雅黑,serif;
+      color: white;
+      text-decoration: none;
+}
+/******************************************文章内容版块*********************************************/
+#articleContent{
+    position:absolute;
+    margin:0;
+    top:150px;
+    left:30%;
+    
+    width:780px;
+    height:1000px;
+    
+    border: thin solid red;
+}
+
+/********************************注册弹窗*******************************************/
+    #changeDiv{
+        position: absolute;
+        top:150px;
+        left: 400px;
+        width: 566px;
+        height: 300px;
+        margin: 0px;
+        padding: 0px;
+        display: none;
+    }
+    #register{
+        position: absolute;
+        top:0px;
+        left: 0px;
+        width: 566px;
+        height: 300px;
+        margin: 0px;
+        padding: 0px;
+        /*display: none;/*使用display:none ，DOM树中就无此元素，其z-index就不会遮挡下面的页面内容*/
+        z-index: 100;/*单位是甚？是不是直接传递给子元素？-实际操作说明是直接传递给子元素*/
+        
+        border: thin solid red;
+    }
+    
+    
+ /*******************************border显隐控制************************************/
+
+    *:not(hr){
+      border: none !important;/*!important强制提前优先级*/
+    }
+    

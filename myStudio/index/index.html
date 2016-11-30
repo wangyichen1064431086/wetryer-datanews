@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <title>Datanews Studio</title>
+    <link rel="shortcut icon" href="../../../common/wetryer.ico" type="image/x-icon"/>
+    
+    <link rel="stylesheet" href="index.css"/>
+    
+    <script src="../../../common/jquery-2.1.4.js"></script>
+</head>
+
+<body>
+     <nav>
+      <ul class="navrow">
+        <li class="logofont">DataNews Studio</li>
+        <li class="navoption"><a target="_blank" href="../../index/datanews.html">首页</a></li>
+        <li class="navoption" id="goodArticle"><a target="_blank" href="../../articles/index/articles.html">精品文章</a></li>
+
+        <li class="navoption" id="hasSub"><a>关于我们</a></li>
+       
+        <li class="navoption"><a target="_blank" href="#">我的工作室</a></li>
+        
+        <li class="regi" id="regi"><a id="beforeRegi">登录/注册</a></li>
+
+      </ul>
+      <ul class="dropdown">
+         <li><a target="_blank" href="#knowus">认识我们</a></li>
+         <li><a target="_blank" href="#joinus">加入我们</a></li>
+      </ul>
+    </nav>
+    
+    <div id="sectionTitle">
+        <p>我的工作室</p>
+        <hr color="gray"/>
+        
+    </div>
+    
+    <div id="articleCate">
+        <ul class="articleMenu">
+            <li class="articleOption0"><a href="../writeNewArticle/writeNewArticle.html" target="myArticle">写文章</a></li>
+            <li class="articleOption1"><a href="../myArticles/index/index.html" target="myArticle">我的文章集</a></li>
+            <li class="articleOption2"><a href="../myInfo/myInfo.html" target="myArticle">我的基本信息</a></li>
+        </ul>
+    </div>
+    
+    <iframe src="../writeNewArticle/writeNewArticle.html" name="myArticle" id="articleContent" scrolling="no">
+        
+    </iframe>
+    
+    
+    
+    <div id="changeDiv">
+      <iframe  id="register" name="regiWindow" src="../../register/regiwindow.html" scrolling="no">
+        
+      </iframe>
+    </div>
+     
+    <script src="index.js"></script>
+</body>
+</html>

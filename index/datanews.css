@@ -1,0 +1,436 @@
+  body{
+     /* height: 100%;/*很重要，如不定义，后面的div的height的百分比将无效*/
+      margin: 0px;/*浏览器默认margin:8px*/
+      padding: 0px;
+      position: absolute;
+      width: 1366px;
+      
+  }
+  
+  /**********************************导航栏 纯手写（也可用bootstrap框架的nav）***************************************/
+  .navrow{
+      position: absolute;
+      top: 0px;
+      height: 50px;
+      width: 100%;/*设备上浏览器最大宽度,继承于body*/
+      background-color: #9CCD64;
+      margin: 0px;
+      padding: 0px;
+      
+      border:thin solid red;
+    }
+   nav>ul>li{/*****此处不能使用.navrow>li  为什么？？？****/
+        display: inline-block;/*li默认的display为block,设置为inline后，可将li排列在一行；但设为inline后，无法使用width属性，就设为inline-block*/
+        width: 100px;
+        height: 100%;
+        text-align: center;/*块内左右居中*/
+        margin: 0px;
+        padding: 0px;
+        background-color: #9CCD64;
+        position: relative;/*为什么一定要向上相对生成位置平移1px才能和父元素对其呢？*/
+        top: -1px;
+        
+        border:thin solid red;
+       
+    } 
+  .logofont{
+        display: inline-block;
+        width:300px;
+        height: 50px;
+        text-align: center;/*块内左右居中*/
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 150px;
+        margin-right: 20px;
+        padding: 0px;
+        position: relative;/*为什么一定要向上相对生成位置平移1px才能和父元素对其呢？*/
+        top: -1px;
+        
+     
+        font: 32px  "Monotype Corsiva", sans-serif;
+        line-height: 50px;/*记住一定得写在font-size之后才有用*/
+        color: white;
+         cursor: default;/*改光标形状为默认形状：一个箭头*/
+        border:thin solid red;
+   }
+   .regi{
+        text-align: center;/*块内左右居中*/
+        margin-left: 120px;
+        margin-right: 20px;
+        padding: 0px;
+        display: inline-block;
+        width:100px;
+        height: 50px;
+        line-height: 50px;
+        /*color: white;
+        font: 14px "微软雅黑",sans-serif;*/
+
+        border:thin solid red;
+    }
+ 
+   .navrow a{
+        text-decoration: none;
+        font: 16px "微软雅黑",sans-serif;
+        color: white;
+        line-height: 50px;
+    }
+   .regi a{
+        text-decoration: none;
+        font: 14px "微软雅黑",sans-serif;
+        color: white;
+        line-height: 50px;
+    }
+  .dropdown{
+        display: none;
+        width: 150px;
+        height: 80px;
+        background-color: #9CCD64;
+        opacity: 0.7;
+    
+        position: absolute;
+        left: 690px;
+        top: 50px;
+        margin: 0px;
+        padding: 0px;
+        z-index: 10;
+        
+        border:thin solid red;
+  }
+  .dropdown>li{
+        width: 150px;
+        height: 30px;
+        text-align: left;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+ .dropdown a{
+        text-decoration: none;
+        font: 14px "微软雅黑",sans-serif;
+        color: white;
+        line-height: 30px;
+        margin-left: 25px;
+        
+    }
+li a,.navoption{
+        cursor: pointer;/*控制鼠标形状为手型*/
+    }
+
+    
+    /***********************************旋转木马效果**********************************************/
+    #myCarousel{
+        position: absolute;
+        top: 50px;
+        width: 100%;/*1366继承于body*/
+        height: 300px;
+        margin: 0;
+        padding: 0;
+        
+        border:thin solid red;
+     
+    }
+    #myCarContent{
+      position: absolute;/*针对static定位以外的第一个父元素，即该父元素定位也为absolute*/
+      width: 100%;
+      height: 100%;/*该子元素边框一定包含在父元素边框之内，因而会下降且右移一个边框宽度*/
+      
+       border:thin solid red;
+    }
+    #myCarButtons{
+      position: absolute;/*针对父元素定位*/
+      top: 90%;
+      left: 40%;
+      width: 20%;
+      height: 30px;
+      border-radius: 15px;
+      
+      background-color: gray;
+      opacity: 0.7;
+      
+      border:thin solid red;
+    }
+    
+    #myCarBu0{
+      position: absolute;
+      top: 5px;
+      left: 25%;
+      margin-left: -10px;
+    
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    
+      border: thin solid #9CCD64;
+    }
+    #myCarBu1{
+      position: absolute;
+      top: 5px;
+      left: 50%;
+      margin-left: -10px;
+    
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    
+      border: thin solid #9CCD64;
+    }
+    #myCarBu2{
+      position: absolute;
+      top: 5px;
+      left: 75%;
+      margin-left: -10px;
+    
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    
+      border: thin solid #9CCD64;
+    }
+  
+    #myCarContent img{
+        width: 100%;
+        height: 100%;
+        
+        border:thin solid red;
+    }
+ 
+    button{
+        outline: none;
+    }
+        
+   #showCount{
+        position: absolute;
+        top: 350px;
+        width: 100%;
+        text-align: center;
+        /*z-index: 10000;*/
+        display: none;/*平常显示为none，需要调试查看的时候再显示出来*/
+    }
+    
+    /**************************我要投稿 按钮***********************/
+  #iWill{
+        position: absolute;
+        top: 360px;
+        text-align: center;
+        
+        width:100%;
+        height: 50px;
+        
+        border:thin solid red;
+    }
+  .iWillBu{
+        /*position: absolute;/**设为absolute之后text-align失效*/
+        width: 180px;
+        height: 50px;
+        background-color: #9CCD64;
+        text-align: center;
+  
+        line-height: 60px;
+        font: 20px "微软雅黑",serif;
+        color: white;
+        cursor: pointer;
+        
+        border:thin solid red;
+    }
+    
+    /*****************************文章排列区域**********************************/
+    #articleSection{
+        position: absolute;
+        top: 420px;
+        width: 100%;
+        height: 250px;
+        
+        
+        border:thin solid red;
+    }
+    
+    #section0{
+        position: absolute;
+        left: 12.5%;
+        top: 0%;
+        width: 20%;
+        height: 100%;
+        
+        border:thin solid red;
+    }
+    
+    #section1{
+        position: absolute;
+        left: 37.5%;
+        top: 0%;
+        width: 20%;
+        height: 100%;
+        
+        border:thin solid red;
+    }
+    #section2{
+        position: absolute;
+        left: 62.5%;
+        top: 0%;
+        width: 20%;
+        height: 100%;
+        
+        border:thin solid red;
+    }
+    
+    .sectionLogo{
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        /*background-color: blue;
+        
+        border: thin solid blue;*/
+        
+    }
+    .sectionLogo img{
+        position:absolute;
+        width:104%;/*父元素position是absolute,如果子元素是position是absolute,若子元素不设置top,left,则默认以父元素为基准，top、left都为0*/
+        height:104%;
+        top: -2%;
+        left: -2%;
+        z-index: 10;
+    }
+    .back0{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #87CEEB;
+    }
+    .back1{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #EE82EE;
+    }
+    .back2{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #FFD700;
+    }
+    .sectionTitle{
+        position:absolute;
+        top:0%;
+        left:110px;
+        width:150px;
+        height:100px;
+        margin:0px;/*作用于p的话，会自动生成margin*/
+        padding:0px;
+        
+        font: 18px "微软雅黑",serif;
+        color:gray;
+        text-align: left;
+        line-height:100px;
+        
+        border: thin solid blue;
+        
+    }
+    .sectionList{
+        position:absolute;
+        top:90px;
+        left:90px;
+        width:170px;
+        height:130px;
+        
+        border: thin solid blue;
+    }
+    .sectionList a{
+        /*text-decoration:none;*/
+        font: 14px "微软雅黑",serif;
+        color:#404040;
+    }
+    .sectionReadMore{
+        position:absolute;
+        top:230px;
+        left:90px;
+        height:20px;
+        width:100px;
+        text-align:left;
+       
+        border: thin solid blue;
+    }
+    .sectionReadMore a{
+        text-decoration: none;
+        font: 14px "微软雅黑",serif;
+        color:#404040;
+        line-height:20px;
+        
+         border: thin solid red;
+    }
+    
+    /**********************触发后应用于sectionLogo**这里@keyframes规则ie不支持没办法******************/
+    .logoWave{
+        animation: scaleToBigger 0.5s ease-in-out 1;/*Internet Explorer 10、Firefox 以及 Opera 支持 animation 属性。*/
+        -webkit-animation: scaleToBigger 0.5s ease-in-out 1;
+    }
+    @-webkit-keyframes scaleToBigger{
+        0%{
+           -webkit-transform: scale(1.0);/*Safari 和 Chrome 支持替代的 -webkit-transform 属性（3D 和 2D 转换）。*/
+           opacity: 1;
+        }
+        100%{
+           -webkit-transform: scale(1.3);
+           opacity: 0;
+        }
+    }
+    @-moz-keyframes scaleToBigger{
+        0%{
+           transform: scale(1.0);/*Internet Explorer 10、Firefox、Opera 支持 transform 属性。*/
+           opacity: 1;
+        }
+        100%{
+           transform: scale(1.3);
+           opacity: 0;
+        }
+    }
+    /**************************************备注**************************/
+    
+    #beizhu{
+        position: absolute;
+        top: 670px;
+        width: 100%;
+        height: 20px;
+        text-align: center;
+    }
+    #beizhu p{
+        font: 14px sans-serif;
+        color: #404040;
+        line-height: 20px;
+    }
+    /********************************注册弹窗*******************************************/
+    
+    #changeDiv{
+        position: absolute;
+        top:150px;
+        left: 400px;
+        width: 566px;
+        height: 300px;
+        margin: 0px;
+        padding: 0px;
+        display: none;
+        z-index: 100;
+    }
+    #register{
+        position: absolute;
+        top:0px;
+        left: 0px;
+        width: 566px;
+        height: 300px;
+        margin: 0px;
+        padding: 0px;
+        /*display: none;/*使用display:none ，DOM树中就无此元素，其z-index就不会遮挡下面的页面内容*/
+        /*z-index: 100;/*单位是甚？是不是直接传递给子元素？-实际操作说明是直接传递给子元素*/
+        
+        border: thin solid red;
+    }
+
+   /*******************************border显隐控制************************************/
+    *{
+      border: none !important;/*!important强制提前优先级*/
+    }
+    

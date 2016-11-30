@@ -1,0 +1,247 @@
+body{
+    position: absolute;
+    width: 564px;
+    height: 298px;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    
+    border: thin solid lightgray;
+}
+
+/*********************左半部分**********************************/
+#slogan{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+    
+    width: 40%;
+    height: 100%;
+    
+   /* border-right:  thin solid gray;*/
+}
+
+#midhr{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: 20%;
+    left: 95%;
+    
+    width: 5%;
+    height: 60%;
+    z-index: 200;
+    border-right: thin solid lightgray;
+}
+
+#slogan p{
+    position: absolute;
+    margin: 0px;/*如果不设置margin:0px,则会自动生成*/
+    padding: 0px;
+    top: 30px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    font: 19px 华文行楷, sans-serif;
+    line-height:50px;
+    text-align: center;
+    
+    /*border: thin solid red;*/
+}
+#slogan img{
+    position: absolute;
+    margin: 0px;/*img不会自动生成margin,但还是设置一下比较严密*/
+    padding: 0px;
+    top: 80px;
+    left: 0px;
+    width: 100%;
+    height: 190px;
+    
+   /* border: thin solid red;*/
+}
+
+
+
+/********************************右半部分*********************************/
+#idpw{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 40%;
+    
+    width: 60%;
+    height: 100%;
+    
+    /*border: thin solid yellow;*/
+}
+
+#idpwtitle{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: 30px;
+    left: 10%;
+    width: 80%;
+    height: 50px;
+    font: 16px 黑体, sans-serif;
+    line-height: 50px;/*line-height要放在font的后面*/
+    
+    /*border: thin solid red;*/
+}
+
+#idpwform{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: 80px;
+    left: 10%;
+    width: 80%;
+    height: 150px;
+    
+    /*border: thin solid red;*/
+}
+#idpwform> :nth-child(1){/*索引从1开始*/
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 0%;
+    width: 100%;
+    height: 40px;
+    font: 18px 黑体,serif;
+    line-height: 40px;
+    
+    /*border: thin solid blue;*/
+}
+#idpwform> :nth-child(2){
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: 50px;
+    left: 0%;
+    width: 100%;
+    height: 40px;
+    font: 18px 黑体,serif;
+    line-height: 40px;
+    
+    /*border: thin solid blue;*/
+}
+#idpwform input{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 20%;
+    height: 90%;/*设为100%会超出父元素*/
+    width: 78%;/*设为80%会超出父元素*/
+    font: 16px 宋体,serif;
+    
+    border: thin solid lightgray;/*带设计圆角、阴影边框*/
+}
+#idpwform> :nth-child(3){/*就是button啦*/
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: 110px;
+    left: 0%;
+    width: 100%;
+    height: 40px;
+    font: 18px 黑体,serif;
+    line-height: 40px;
+    text-align: center;
+    
+    color: white;
+    background-color: #9CCD64;
+    border-radius:5px;
+    
+  /*  border: thin solid blue;*/
+}
+
+#otheroption{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: 260px;
+    left: 40%;
+    width: 55%;
+    height:38px;
+    
+}
+#otheroption> :nth-child(1){
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top:0px;
+    left: 0%;
+}
+#otheroption> :nth-child(2){
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: 20%;
+    left: 45%;
+    
+    height: 60%;
+    width: 5%;
+    border-right: thin solid lightgray;
+}
+
+#otheroption> :nth-child(3){
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top:0px;
+    left: 50%;
+  
+}
+#otheroption>a{
+    text-decoration:none;
+    width: 50%;
+    height: 38px;
+    font: 14px 宋体,serif;
+    line-height: 38px;
+    text-align: center;
+    color: gray;
+   
+    
+   /* border: thin solid red;*/
+}
+
+/***********************************右上角叉叉************************************/
+#close{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 92%;
+    top: 0%;
+    width: 7.8%;
+    height: 20px;
+    border: none;
+    border-left: thin solid lightgray;
+    background-color: white;
+    
+    font: 18px 黑体,serif;
+    line-height: 20px;
+    text-align: center;
+    outline: none;
+}
+/*
+#close button{
+    position: absolute;/*父元素为absolute,子元素想根据父元素进行absolute定位，就必须也要自己设置成absolute
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    width: 100%;
+    height: 20px;
+
+  
+}*/
+   /******************************* border显隐控制************************************/
+   /*
+    * :not(#slogan) :not(body){ /*否定多个的用法，好像否定的选择器不能是复合选择器
+      border: none !important;/*!important强制提前优先级
+    }
+    

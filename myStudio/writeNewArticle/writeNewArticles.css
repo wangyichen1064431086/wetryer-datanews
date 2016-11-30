@@ -1,0 +1,8 @@
+#title{
+    width: 750px;
+}
+textarea{
+    width:750px;
+    height:500px;
+    border:  thin solid gray;
+}

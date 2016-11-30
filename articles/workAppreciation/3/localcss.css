@@ -1,0 +1,114 @@
+    #showmethod{    /*根据手机和电脑两种屏幕设置*/
+        position:absolute;
+        left:2%;
+        right:2%;
+    }
+    body {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    p{
+      font-size: 16px;
+      font-family: 微软雅黑;
+      line-height: 2;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+    h2,h3{
+      font-family:微软雅黑;
+    }
+    h3{
+      position: relative;
+      float:left;
+    }
+    #bigtitle{
+      font-family: 微软雅黑;
+      color:#4682B4;
+      text-align: center;
+    }
+    .articletitle{
+      font-family: Arial;
+    }
+    #note{
+      padding: 5px;
+      font-family: 微软雅黑;
+      text-align:right;
+      /*border: 1px solid rgb(207,207,207)/*#483D8B*/;
+      /*background-color:rgb(207,207,207);*/
+      /*color: #999999;*/
+    }
+    #pencil{
+      font-size: 30px;
+      margin-left: 95%;
+    }
+    #mainarticle{
+     border: 2px solid rgb(207,207,207);
+     border-left: solid 5px #4682B4;
+     padding: 10px;
+     margin-bottom: 20px;
+     /*height: 1000px;*/
+    }
+    footer{
+      margin-top:30px;
+    }
+    .picnot{                       /*图片底部标题*/
+      text-align: center;
+      font: normal 14px 微软雅黑;
+    }
+    .staticpic{
+      width: 100%
+    }
+    .staticpic2{
+      width: 70%;
+      margin-left:15%;
+    }
+    #storecontent{
+      display: none;
+    }
+    /*button{
+      width: 16.6%;
+      border: thin solid black;
+      margin: 0;
+      padding: 0;
+    }*/
+    #emailtitle{
+      margin: 0;
+    }
+    button{
+      border: thin solid #B0C4DE;
+      background-color: white;
+      height: 25px;
+      outline: none;/*可以去掉点击时出现的边框*/
+    }
+  
+    #emailcontent{
+      width: 100%;
+      border-left: thin solid #B0C4DE;
+      border-right:thin solid #B0C4DE;
+      border-bottom: thin solid #B0C4DE;
+      border-top: none;
+      height: 500px;
+      background-color: #E6E6FA;
+    }
+    #email1{
+      background-color: #E6E6FA;
+      border-bottom: none;
+    }
+    #emailblock{
+      width: 80%;
+      float: right;
+    }
+
+    @media screen and (min-width: 800px){ /*当屏幕小于800px时*/
+        #showmethod{    /*根据手机和电脑两种屏幕设置*/
+           position:absolute;
+           left:20%;
+           right:20%;
+        }
+        #emailblock{
+            width: 100%;
+        }
+        button{
+            font: 12px serif; 
+        }
+    }

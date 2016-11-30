@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <title>Datanews Studio</title>
+    <link rel="shortcut icon" href="../../../common/wetryer.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="regiPage.css">
+    <script src="../../common/jquery-2.1.4.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul class="navrow">
+            <li class="logofont">DataNews Studio</li>
+            <li class="navoption"><a target="_blank" href="../../index/datanews.html">首页</a></li>
+            <li class="navoption" id="goodArticle"><a target="_blank" href="../../articles/index/articles.html">精品文章</a></li>
+    
+            <li class="navoption" id="hasSub"><a>关于我们</a></li>
+           
+            <li class="navoption"><a target="_blank" href="../../myStudio/index/index.html">我的工作室</a></li>
+            
+            <li class="regi" id="regi"><a id="beforeRegi">登录/注册</a></li>
+  
+        </ul>
+        <ul class="dropdown">
+            <li><a target="_blank" href="#knowus">认识我们</a></li>
+            <li><a target="_blank" href="#joinus">加入我们</a></li>
+        </ul>
+    </nav>
+      
+
+    
+    <div id="sectionTitle">
+        <p>我要注册</p>
+        <hr color="gray"/>
+        
+    </div>
+    
+    
+    <div id="sectionContent">
+        <form name="regiForm" id="regiForm" method="post" action="http://www.wetryer.com:3000/" accept-charset="UTF-8">
+            <p>
+                <label for="nickname">
+                    昵称
+                    <input class="rect" type="text" placeholder="英文字母/数字" autofocus="autofocus" id="nickname" name="nickname"/>
+                </label>
+            </p>
+            <p>
+                <label for="identity">
+                    帐号
+                    <input class="rect" placeholder="用户名/邮箱/手机号" id="identity" name="identity"/>
+                </label>
+            </p>
+            <p>
+                <label for="password">
+                    密码
+                    <input class="rect" type="password" placeholder="6~16位字母/数字" id="password" name="password"/>
+                </label>
+            </p>
+            <p>
+                <label for="rePassword">
+                    确认密码
+                    <input class="rect" type="password" placeholder="再次输入上述6~16位字母/数字" id="rePassword" name="rePassword"/>
+                </label>
+           </p>
+            <p>
+                <label for="female">
+                    <input type="radio" checked value="F" id="female" name="gender"/>
+                    女
+                </label>
+                <label for="male">
+                    <input type="radio" value="M" id="male" name="gender"/>
+                    男
+                </label>
+            </p>
+            <p>
+                <label for="birthDay">
+                    出生日期
+                    <input  class="rect" type="date" id="birthDay" name="birthDay"/>
+                </label>
+            </p>
+           
+            <button type="submit" name="submit" id="submit">确认注册</button>
+        </form>
+    </div>
+
+    <div id="changeDiv">
+      <iframe  id="register" name="regiWindow" src="../regiwindow.html" scrolling="no">
+        
+      </iframe>
+    </div>
+        
+
+    <script src="regiPage.js"></script>
+
+   
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <title>Datanews Studio</title>
+    <link rel="shortcut icon" href="../../../common/wetryer.ico" type="image/x-icon"/>
+    
+    <link rel="stylesheet" href="writeNewArticles.css"/>
+    
+    <script src="../../../common/jquery-2.1.4.js"></script>
+</head>
+
+<body>
+    <form id="writeMyArticle" method="post" action="http://www.wetryer.com:3000/writeMyAr">
+        
+        <label for="title">
+            <p>
+                文章标题：
+            </p>
+            <input placeholder="请在此处输入标题" id="title" name="title"/>
+        </label>
+     
+        
+        <label for="maintext">
+            <p>
+                文章正文：
+            </p>
+            <textarea placeholder="请在此处写入正文..." id="maintext" name="maintext">
+        
+            </textarea>
+        </label>
+        
+        <p>
+            <button id="save">保存</button>
+        </p>
+    </form>
+    
+    <script src="writeNewArticle.js"></script>
+</body>
+</html>

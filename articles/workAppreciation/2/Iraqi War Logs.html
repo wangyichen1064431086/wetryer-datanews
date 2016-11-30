@@ -1,0 +1,226 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--网页宽度默认等于屏幕宽度（width=device-width），原始缩放比例（initial-scale=1）为1.0，即网页初始大小占屏幕面积的100%。-->
+
+    <title>【数据新闻赏析】Iraqi War Logs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap-glyphicons/1.0/css/bootstrap-glyphicons.css">
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <style type="text/css">
+      #showmethod{    /*根据手机和电脑两种屏幕设置*/
+        position:absolute;
+        left:2%;
+        right:2%;
+      }
+      body {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      p{
+        font-size: 16px;
+        font-family: 微软雅黑;
+      }
+      h2,h3{
+        font-family:微软雅黑;
+      }
+      h3{
+        position: relative;
+        float:left;
+      }
+      #bigtitle{
+        font-family: 微软雅黑;
+        color:#4682B4;
+        text-align: center;
+      }
+      .articletitle{
+        font-family: Arial;
+      }
+      #note{
+        padding: 5px;
+        font-family: 微软雅黑;
+        text-align:right;
+        /*border: 1px solid rgb(207,207,207)/*#483D8B*/;
+        /*background-color:rgb(207,207,207);*/
+        /*color: #999999;*/
+      }
+      #pencil{
+        font-size: 30px;
+        margin-left: 95%;
+      }
+      #mainarticle{
+       border: 2px solid rgb(207,207,207);
+       border-left: solid 5px #4682B4;
+       padding: 10px;
+       margin-bottom: 20px;
+      }
+      footer{
+        margin-top:30px;
+      }
+      .picnot{                       /*图片底部标题*/
+        text-align: center;
+        font: normal 14px 微软雅黑;
+      }
+      .staticpic{
+        width: 100%
+      }
+      .staticpic2{
+        width: 70%;
+        margin-left:15%;
+      }
+     
+     @media screen and (min-width: 800px){ /*当屏幕大于600px时*/
+        #showmethod{    /*根据手机和电脑两种屏幕设置*/
+           position:absolute;
+           left:20%;
+           right:20%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+      
+        
+       <div id="showmethod">
+            <h2 id="bigtitle">【数据新闻赏析】<span class="articletitile">Iraqi War Logs</span> </h2>
+
+            
+            <div id="note">
+              By 数据传播工作室 阿琛Bonnie
+            </div>
+            <br>
+                
+            <section>  
+                <p>
+                  本期【数据新闻赏析】栏目将为你带来Associated Press（美联社）的经典数据新闻作品 Iraqi War Logs （《伊拉克战争日志》）——
+                </p>
+                <p>
+                   Iraqi War Logs于2010年10月发表，由Jonathan Stray 和 Julian Burgess制作。
+                   他们在大量的文本数据集——美国政府对伊拉克战争的一系列报告——的基础上，通过文本分析和挖掘算法，进而可视化地展示出这些报告中的关键词及其关系。
+                </p>
+                <p>
+                    下面就一起来欣赏该作品吧：
+                </p>
+            </section>  
+          
+            <span id="pencil" class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+            
+            <article id="mainarticle">
+                <header>
+                    <h2>Iraqi War Logs：</h2>
+                </header>
+                <section>
+                    <p>
+                        这是一个关于11616篇2006年12月的SIGACT（significant action ，美军对伊拉克战争的关键行动）报告的图像。
+                        在这之前，已经有人基于这个文档集创建了一些可视化作品，例如标出了事件发生地点的伊拉克地图、有关伤亡情况的统计图表等。
+                        我们则是基于每个文档中最宝重要的部分——文本摘要——来设计可视化。
+                    </p>
+                </section>
+                <br>
+                  
+                <section>
+                    <img class="staticpic" src="http://pic000.oss-cn-beijing.aliyuncs.com/10-1.png" alt="pic1"/>
+                    <img class="staticpic2" src="http://pic000.oss-cn-beijing.aliyuncs.com/10-2.png" alt="pic2"/>
+                    <p class="picnot">
+                        图1 2006年12月SIGACT报告汇总
+                    </p>
+                    <p>
+                        <a href="http://jonathanstray.com/wp-content/uploads/2010/12/SIGACTS-dec-2006-hi-res2.jpg">查看原图网址</a>（原网址图像可任意放大查看所有节点） 
+                    </p>
+                    <p>
+                      在本图中，每篇报告都是一个节点。每个节点都被该报告中三个最重要的关键词标注。
+                      相似的文档之间有边连接。相互之间有连接的节点会聚集在一起。
+                      这样就产生了一系列的集群，这些集群就都被报告中的关键词词打上了标签。
+                    </p>
+                    <p>
+                      我们把每个节点——即每篇报告根据incident type（事件类型）涂上颜色，“incident type”是SIGACT报告中已有的字段。
+                      图中不同的颜色代表不同的incident type。
+                    </p>
+                </section>
+                <br>
+                  
+                <section>
+                    <p>
+                      处于图像中央位置的蓝色集群，代表“criminal event”（刑事事件）类型，该类型文档都包括“corpse”（尸体）字眼。
+                      它们的数量是令人悲伤的，而它们都是由于伊拉克战争造成的。
+                      criminal event集群还包含了若干子集群，这些子集群也拥有各种标签，例如“shot”（射杀）等。
+                    </p>
+                    <img class="staticpic2" src="http://pic000.oss-cn-beijing.aliyuncs.com/10-3Murders.png" alt="pic3"/>
+                    <p class="picnot">
+                        图2 2006年12月SIGACT报告汇总“criminal event” 部分
+                    </p>
+                </section>
+                <br>
+                  
+                <section>
+                    <p>
+                      往上，蓝色的集群逐渐融入到绿色的“enemy action”（敌军行动）类型的报告集群。
+                      这类报告带有诸如 “civ, killed, shot”（市民，死亡，炮弹）等字眼，显然是关于平民在战争中的受伤情况的报告。
+                      enemy action集群也有其子集群，分别带有“mortar”（迫击炮）、 “female”（女性）、 “officer”（官员） 和 “injured”（受伤的）标签。
+                    </p>
+                    <img class="staticpic2" src="http://pic000.oss-cn-beijing.aliyuncs.com/10-4Enemy-action.png" alt="pic3"/>
+                    <p class="picnot">
+                        图3 2006年12月SIGACT报告汇总“enemy action” 部分 
+                    </p>
+                </section>
+                <br>
+                  
+                <section>
+                    <p>
+                      enemy action集群旁边还有一个红色的集群。这些报告被编码为“explosive hazard”（爆炸危险）类型，都包含“tanker truck”（油罐卡车）字眼。
+                      该集群表明伊拉克在2006年12月至少发生过几十起这样的爆炸事件。
+                    </p>
+                    <img class="staticpic2" src="http://pic000.oss-cn-beijing.aliyuncs.com/10-4Tanker-truck.png" alt="pic4"/>
+                    <p class="picnot">
+                        图4 2006年12月SIGACT报告汇总“explosive hazard”部分 
+                    </p>
+                </section>
+                <br>
+              
+            </article>
+          
+              
+            <section>
+                <p>
+                    该作品被 Financial Times （《金融时报》）著名记者Cynthia O’Murchu称赞为是“一次鼓舞人心的向文本分析和可视化的进军。
+                </p>
+                <p>
+                    该作品的数据信息呈现方法虽然存在一定的局限性，但其在当时确实具有较强的创新性。
+                    这种方法抓出报告中的关键字，并充分地应用社会网络科学中的“节点”、“关系”、“簇”的思想，
+                    清晰而全面地描绘出了各个报告之间的关系，从而可以让读者真切地感知2006年6月的伊拉克战况。
+                </p>
+                <p>
+                   在文字组织方面，该作品十分注重对图像的讲解，极大地方便了读者对图像信息的阅读。
+                   此外，本文还花了大量篇幅来讲解该作品的制作过程，既提升了信息的可靠性，又有助于读者更好地理解信息。                  
+                </p>
+                <p>
+                  更重要的是，这篇文章中所描述的有关文本信息呈现的探索性工作已经发展成为Overview项目，这是一个专门为调查记者和其他有兴趣的人服务的开源大文档集可视化工具。
+                  该作品于2012年4月慷慨地补充上了对Overview的使用说明。
+                  也想制作出自己的文本信息可视化作品的小伙伴们还不赶快动手试试！
+                  <a href="https://blog.overviewdocs.com/">点击这里查看Overview项目地址</a>
+                </p>
+            </section>
+            <hr>
+              
+            <footer>
+                <p>
+                    数据新闻作品来源：Associated Press
+                    <a href=" http://jonathanstray.com/a-full-text-visualization-of-the-iraq-war-logs">Iraqi War Logs </a>
+                </p>
+                <p>
+                    参考文献：<a href="http://datajournalismhandbook.org/1.0/en/introduction_3.html#FIG014"> Data Journalism Handbook</a>
+                </p>
+           </footer>  
+        </div>
+       
+        <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+        <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script>
+
+        </script>
+  </body>
+</html>

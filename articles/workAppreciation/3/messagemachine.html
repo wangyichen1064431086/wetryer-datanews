@@ -1,0 +1,137 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--网页宽度默认等于屏幕宽度（width=device-width），原始缩放比例（initial-scale=1）为1.0，即网页初始大小占屏幕面积的100%。-->
+
+    <title>【数据新闻赏析】Message Machine</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap-glyphicons/1.0/css/bootstrap-glyphicons.css">
+    <link rel="stylesheet" type="text/css" href="localcss.css">
+
+  </head>
+
+  <body>
+      
+        
+       <div id="showmethod">
+          <h2 id="bigtitle">【数据新闻赏析】<span class="articletitile">Message Machine</span> </h2>
+
+          
+          <div id="note">
+            By 数据传播工作室 阿琛Bonnie
+          </div>
+          <br>
+              
+          <section>  
+              <p>
+                  如果你经常关注国际政治新闻，那么你或许常常会惊叹于政治选举运动中各党各派层出不穷的拉票手段。
+                  不过，如果你以为政客们的手段仅止于乐此不疲的广告轰炸、针锋相对的选举辩论，那么就有点out啦~
+                  据说，美国的政治竞选团队已经悄无声息地把大数据技术应用到这场战争中了！
+                  想要了解他们是怎么做的吗？——请看本期【数据新闻赏析】为你带来的数据新闻作品 Message Machine 。
+              </p>
+              <p>
+                 Message Machine由美国非营利性调查新闻编辑室ProPublica制作，其诞生与2012年美国总统大选有着密不可分的关系。
+                 当时，一些人收到了来自奥马巴竞选团队的邮件，并对此在Twitter上展开了讨论。
+                 ProPublic公司的Jeff Larson等人很快注意到此事，于是就请ProPublic的读者们把收到的邮件转发给他们。
+                 基于这些邮件，ProPublic公司制作了数据新闻Message Machine ，讲述了一个当时正在兴起的现象——
+                 政治选举运动中竞选团队运用大数据将特定信息定位给特定人群。
+              </p>
+              <p>
+                  下面就一起来欣赏该作品吧：
+              </p>
+          </section>  
+        
+          <span id="pencil" class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+          
+          <article id="mainarticle">
+            <header>
+              <h2>Message Machine：</h2>
+            </header>
+            <section>
+              <p>
+                政治选举运动中竞选团队的信息发布方式和经费获取手段真是越来越高明了——他们已经在使用潜在选民们巨大的个人信息数据库了。
+                这里展示了奥巴马竞选团队发给人们的6个版本的邮件。
+                这些邮件是全国各地的读者们转发给我们的。
+                任意点击一个标签即可查看其中一封邮件，然后将鼠标悬停在另一个邮件标签上即可查看悬停邮件和选中邮件的异同。
+                在选中各个邮件时，邮件内容界面的左侧会显示出相应邮件接收人情况的统计分析图表。
+              </p>
+            </section>
+            
+           
+            <aside id="emailblock">
+              <div class="row" id="emailtitle">
+                <button class="col-xs-2 col-md-2" id="email1">EMAIL1</button>
+                <button class="col-xs-2 col-md-2" id="email2">EMAIL2</button>
+                <button class="col-xs-2 col-md-2" id="email3">EMAIL3</button>
+                <button class="col-xs-2 col-md-2" id="email4">EMAIL4</button>
+                <button class="col-xs-2 col-md-2" id="email5">EMAIL5</button>
+                <button class="col-xs-2 col-md-2" id="email6">EMAIL6</button>
+              </div>
+              <div>
+                <pre id="emailcontent">
+                </pre>
+              </div>
+            </aside>
+            
+            <section id="datablock">
+              <h2 id="pnumber">155</h2>
+              <p>人收到了这封邮件</p>
+              
+              <p>关于这组人的统计情况如下:</p>
+              <p>性别</p>
+              <canvas id="gender" width="100" height="20">
+                不支持canvas
+              </canvas>
+            
+              <p>年龄</p>
+              <canvas id="age" width="100" height="30">
+                不支持canvas
+              </canvas>
+              
+              <p>之前就是赞助人吗？</p>
+               <canvas id="ifdonor" width="100" height="20">
+                不支持canvas
+              </canvas>
+              
+              <table id="subjectline"><!--整个是个变量，全部要重写-->
+                <tr>
+                  <th>标题</th><th>#Emails</th>
+                </tr>
+                <tr>
+                  <td>Janet just found out</td><td style="text-align: right">151</td>
+                </tr>
+                <tr>
+                  <td>Janet from Accokeek</td><td style="text-align: right">3</td>
+                </tr>
+                <tr> 
+                  <td>Meet Janet</td><td style="text-align: right">1</td>
+                </tr>
+              </table>
+              
+            </section>
+          </article>
+
+          <hr>
+              
+          <footer>
+            <p>
+                数据新闻作品来源：Associated Press
+                <a href=" http://jonathanstray.com/a-full-text-visualization-of-the-iraq-war-logs">Iraqi War Logs </a>
+            </p>
+            <p>
+                参考文献：<a href="http://datajournalismhandbook.org/1.0/en/introduction_3.html#FIG014"> Data Journalism Handbook</a>
+            </p>
+            <div>
+                 <pre id="storecontent"></pre>
+              </div>
+         </footer>  
+        </div>
+        
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <script src="compare.js"></script>
+        <script src="localjs.js"></script>
+  </body>
+</html>

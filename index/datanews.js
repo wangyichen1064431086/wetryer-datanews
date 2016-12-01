@@ -262,18 +262,23 @@ window.onunload=function(){
     function addWave(event) {
         event=EventUtil.getEvent(event);
         var target=EventUtil.getTarget(event);
+        var flag=0;
         if (target==sectionLogos[0]) {
             EventUtil.addClass(document.querySelector(".back0"),"logoWave");
+            flag=0;
            //document.querySelector(".back0").classList.add("logoWave");
         }
         else if (target==sectionLogos[1]) {
             EventUtil.addClass(document.querySelector(".back1"),"logoWave");
+            flag=1;
            //document.querySelector(".back1").classList.add("logoWave");
         }
         else if (target==sectionLogos[2]) {
             EventUtil.addClass(document.querySelector(".back2"),"logoWave");
+            flag=2;
            //document.querySelector(".back2").classList.add("logoWave");
         }
+        ga('send','event','sectionLogo','mouseenter','enter the sectionLogo',flag);
         
     }
     
@@ -329,6 +334,7 @@ window.onunload=function(){
     
     EventUtil.addHandler(goodArticle,"click",function(){
         localStorage.setItem("readGoto","option0");
+        ga('send','event','Buttons','click','goto goodArticle');
     });
 })();
 
